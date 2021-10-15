@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crisp_N_Crumps | Online Food Delivery App</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body background="img/reverse.png">
+    <nav id="navbar1">
+      <div id="logo1">
+        <img src="img/logo11.png" alt="Image not found. Reload or check network connection." />
+      </div>
+    </nav>
+    <div
+class="login-box"
+style="position: relative; left: 589px; top: 89px;" 
+>
+<div class="login-logo">
+  <b>
+    <div
+      class="center"
+      style="
+        font-size: 45px;
+        color: #181d1a;
+        font-family: courier, arial, helvetica;
+      "
+    >
+      User Login
+    </div></b
+  >
+  <br><br><br>
+</div>
+<form name="loginForm" action="" method="post">
+  <h5>
+    Email ID:
+</h5>
+  <div class="form-group has-feedback">
+    <input
+      type="text"
+      placeholder="User Email ID"
+      name="usermailid"
+      value="{{request.form.usermailid}}"
+    />
+  </div>
+  <br>
+  <h5>
+    Password:
+</h5>
+  <div class="form-group has-feedback">
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      value="{{request.form.password}}"
+    />
+  </div>
+  <br>
+  <input class="btn1" type="submit" value="Login" />
+</form>
+<br>
+<a href="UserProfile.html">Register</a>
+</div>
+{% if error %}
+<p class="error"><strong>Error:</strong> {{ error }} {% endif %}</p>
+</div>
+</body>
+</html>

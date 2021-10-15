@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Bootstrap CSS -->
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style101.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crisp_N_Crumps | Online Food Delivery App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+</head>
+<body
+    background="img/d1.jpeg"  background-repeat: no-repeat>
+<div
+      class="desktop header"
+      data-testid="item components"
+      role="banner"
+      data-id="root-header">
+      <nav id="navbar9">
+        <div id="logo9">
+          <img
+            src="img/logo11.png"
+            alt="Image not found. Reload or check network connection."/>
+        </div>
+        <ul>
+          <li class="item"><a href="usermainbody.html">Menu</a></li>
+          <li class="item"><a href="userorderhistory.html">My Orders </a></li>
+          <li class="item"><a href="aboutus.html">About Us</a></li>
+          <li class="item"><a href="contactus.html">Contact Us</a></li>  
+        </ul>
+      </nav>
+</div>
+        
+    <div class="wrapper">
+      <div class="sidebar">
+        <ul>
+          <li><a href="usermainbody.html"><i class="fas fa-home"></i>Menu</a></li> 
+          <li><a href="userorderhistory.html"><i class="fas fa-project-diagram"></i> My Orders</a></li>                 
+          <li><a href="aboutus.html"><i class="fas fa-address-card"></i>About Us</a></li>          
+          <li><a href="contactus.html"><i class="fas fa-address-book"></i>Contact Us </a></li>
+          <li><a href="index.html"><i class="fas fa-home"></i>Log Out</a></li>
+        </ul>             
+     </div>
+        <div style="margin: left 101px;">
+          <div class="main_content">
+              <h2 class="header" style="color: #4b4276;">Choose Your Restaurant:</h2>  
+          </div>
+          <br>
+        </div>
+           
+    </div> 
+    <div>
+    <table class ="center" style=" background-repeat:no-repeat; width:1050px; margin: left 100px; text-align:center;" cellpadding="0" cellspacing="0" border=black>
+        <th class="name-row">NO.</th>              
+        <th class="name-row">HOTEL NAME</th> 
+        <th class="name-row">DELIVERY ADDRESS</th>            
+        <th class="name-row">ITEM NAME</th>
+        <th class="name-row">QUANTITY</th>                            
+        <th class="name-row">PRICE</th>                            
+        <th class="name-row"> </th>
+        <tbody style="font-weight: normal;font-family:Arial;color:#273746">
+        {% for item in orderitems %}
+        <tr>
+          <td class="name-row">{{item.no}}</td>
+          <td class="name-row">{{item.hotelname}}</td>
+          <td class="name-row"><div class="form-group has-feedback">
+            <input
+              type="text"
+              placeholder="User delivery address"
+              name="delivery address"
+              value="{{request.form.deliveryaddress}}"
+            />
+          </div></td>
+          <td class="name-row">{{item.itemname}}</td>
+          <td class="name-row"><div class="form-group has-feedback">
+            <input
+              type="text"
+              placeholder="Quantity"
+              name="Quantity"
+              value="{{request.form.itemcount}}"
+            />
+          </div></td>
+
+          <td class="name-row">{{item.price}}</td>
+
+
+          <td class="btn10" 
+          onclick="window.location.href = 'http://127.0.0.1:5501/Mod/bill.html';">Place Order</td>
+        </tbody>
+        </tr>
+        {% endfor %}
+    </table>
+  </div>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+ </body>
+ <script>
+  var n = 0;
+  function save1() {
+      var msg1 = document.getElementById('msg1');
+      msg1.innerHTML = 'Order Accepted!';
+
+      console.log(n + 1);
+  }
+</script>
+<script>
+  var n = 0;
+  function save2() {
+      var msg2 = document.getElementById('msg2');
+      msg2.innerHTML = 'Order Declined!';
+
+      console.log(n + 1);
+  }
+</script>
+
+</html>

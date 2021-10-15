@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crisp_N_Crumps | Online Food Delivery App</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+
+  <body background="img/reverse.png">
+    <nav id="navbar1">
+      <div id="logo1">
+        <img
+          src="img/logo11.png"
+          alt="Image not found. Reload or check network connection."
+        />
+      </div>
+    </nav>
+
+    <section id="home1">
+      <br />
+
+      <h3 class="h-primary">User Profile</h3>
+    </section>
+    <div class="login-box" style="position: relative; left: 542px; top: 60px">
+      <form name="loginForm" action="" method="post">
+        <h5>User Name:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="User Name"
+            name="username"
+            value="{{request.form.username }}"
+          />
+        </div>
+        <br />
+
+        <h5>Email ID:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Email ID"
+            name="usermailid"
+            value="{{request.form.usermailid }}"
+          />
+        </div>
+        <br />
+
+        <h5>New Password:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            value="{{request.form.password }}"
+          />
+        </div>
+        <br />
+        <h5>Phone No.:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Phone no."
+            name="userphoneno"
+            value="{{request.form.userphoneno}}"
+          />
+        </div>
+        <br />
+        <input class="btn2" type="submit" value="Register" />
+      </form>
+      <br />
+    </div>
+  </body>
+</html>

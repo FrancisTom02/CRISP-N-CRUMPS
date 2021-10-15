@@ -1,0 +1,214 @@
+/*CSS RESET*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* css variables*/
+:root {
+  --navbar-height: 59px;
+}
+
+/*navigation bar*/
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* navigation bar : logo and image*/
+
+#logo {
+  margin: 37px 44px;
+}
+
+#logo img {
+  height: 118px;
+  margin: -19px 543px;
+
+  border-radius: 85px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: cursive;
+}
+#home01 {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: cursive;
+  margin-left: 83px;
+}
+
+.btn {
+  padding: 18px 42px;
+  border-radius: 27px;
+  font-family: cursive;
+  font-size: 19px;
+}
+
+#navbar1 {
+  display: flex;
+  position: relative;
+}
+
+#logo1 {
+  margin: 3px 4px;
+}
+
+#logo1 img {
+  height: 118px;
+  margin: 1px 2px;
+  border-radius: 85px;
+}
+
+#navbar1::before {
+  content: "";
+  background-color: cyan;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Navigation Bar */
+#navbar1 {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar1::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 99%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo1 {
+  margin: -16px 38px;
+}
+
+#logo1 img {
+  height: 87px;
+  margin: 29px 10px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar1 ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar1 ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+#navbar1 ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar1 ul li a:hover {
+  color: rgb(27, 25, 25);
+  background-color: white;
+}
+
+.btn1 {
+  /* Login - User & hotel    */
+  padding: 1px 24px;
+  border-radius: 27px;
+  font-family: cursive;
+  font-size: 15px;
+}
+
+#home1 {
+  /* User, Hotel Profile Creation  */
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: courier, arial, helvetica;
+}
+
+.btn2 {
+  /* User, Hotel Profile Creation  */
+  padding: 1px 24px;
+  border-radius: 27px;
+  font-family: cursive;
+  font-size: 15px;
+  align-content: center;
+}
+
+/*bill navbar*/
+#navbar7 {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar7::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 92%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo7 {
+  margin: -16px 38px;
+}
+
+#logo7 img {
+  height: 66px;
+  margin: 29px -15px;
+  border-radius: 85px;
+}
+
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.btn100 {
+  /* User, Hotel Profile Creation  */
+  padding: 15px 42px;
+  border-radius: 16px;
+  font-family: cursive;
+  font-size: 15px;
+  margin-left: 514px;
+}

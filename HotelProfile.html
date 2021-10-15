@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crisp_N_Crumps | Online Food Delivery App</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+
+  <body background="img/reverse.png">
+    <nav id="navbar1">
+      <div id="logo1">
+        <img
+          src="img/logo11.png"
+          alt="Image not found. Reload or check network connection."
+        />
+      </div>
+    </nav>
+
+    <section id="home1">
+      <h3 class="h-primary">Hotel Profile</h3>
+    </section>
+    <div class="login-box" style="position: relative; left: 602px; top: 60px">
+      <form name="loginForm" action="" method="post">
+        <h5>Hotel Name:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Hotel name"
+            name="hotelname"
+            value="{{request.form.hotelname}}"
+          />
+        </div>
+        <br />
+
+        <h5>Email ID:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Email ID"
+            name="hotelmailid"
+            value="{{request.form.hotelmailid}}"
+          />
+        </div>
+        <br />
+
+        <h5>New Password:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="password"
+            placeholder="Password"
+            name="hotelpassword"
+            value="{{request.form.hotelpassword}}"
+          />
+        </div>
+        <br />
+
+        <h5>Hotel Landline:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Landline No."
+            name="landlineno"
+            value="{{request.form.landlineno}}"
+          />
+        </div>
+        <br />
+
+        <h5>Hotel Phone no.:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Phone no."
+            name="hotelphoneno"
+            value="{{request.form.hotelphoneno}}"
+          />
+        </div>
+        <br />
+
+        <h5>Location:</h5>
+        <div class="form-group has-feedback">
+          <input
+            type="text"
+            placeholder="Hotel Location"
+            name="hotellocation"
+            value="{{request.form.hotellocation}}"
+          />
+        </div>
+        <br />
+
+        <input class="btn2" type="submit" value="Register" />
+      </form>
+      <br />
+    </div>
+  </body>
+</html>
